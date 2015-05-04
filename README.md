@@ -17,4 +17,9 @@
 
 # DEMO
 
+<<<<<<< HEAD
 - https://fast-garden-7039.herokuapp.com/world/xantera
+=======
+- https://fast-garden-7039.herokuapp.com/world/xantera
+
+>>>>>>> bd48a232d792ddf29c0bccf2b203bc7cbabe25de
