@@ -3,13 +3,8 @@ require 'sinatra'
 require 'open-uri'
 require 'nokogiri'
 require 'json'
-require 'rack/csrf'
 
-helpers do
-  def csrf_tag
-    Rack::Csrf.csrf_tag(env)
-  end
-end
+set :protection, :except => :json_csrf
 
 error Sinatra::NotFound do
   content_type 'text/plain'
