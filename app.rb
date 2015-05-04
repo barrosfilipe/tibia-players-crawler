@@ -25,19 +25,19 @@ get '/world/:server' do
 	doc.encoding = 'utf-8'
 
 	rows = doc.search('//tr[starts-with(@class, "Odd") or starts-with(@class, "Even")]')
-		@details = rows.collect do |row|
-      detail = {}
+		@players = rows.collect do |row|
+      player = {}
       [
         [:name, 'td[1]/a[@href]/text()'],
         [:level, 'td[2]/text()'],
         [:vocation, 'td[3]/text()'],
       ].each do |name, xpath|
-        detail[name] = row.at_xpath(xpath).to_s.strip
+        player[name] = row.at_xpath(xpath).to_s.strip
       end
-      detail
+      player
 	  end
-	  if @details.any?
-	  	 JSON.pretty_generate(@details)
+	  if @players.any?
+	  	 JSON.pretty_generate(@players)
 		else
 			'[{:msg=>"World with this name doesn\'t exist!"]'
 		end
