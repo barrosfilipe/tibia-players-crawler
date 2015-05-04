@@ -9,6 +9,8 @@ GEM
     rack (1.6.0)
     rack-protection (1.5.3)
       rack
+    rack_csrf (2.5.0)
+      rack (>= 1.1.0)
     sinatra (1.4.6)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -25,6 +27,7 @@ PLATFORMS
 
 DEPENDENCIES
   nokogiri
+  rack_csrf
   sinatra
   sinatra-cross_origin
   thin
