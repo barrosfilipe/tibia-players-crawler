@@ -1,4 +1,4 @@
-# ruby-tibia-api
+# Tibia.com Online Players API - RUBY
 
 - Type: bundle install
 - Type: ruby app.rb
