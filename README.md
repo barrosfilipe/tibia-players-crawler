@@ -15,6 +15,6 @@
 - I parse the content from Official Tibia World Information
 - Xantera Page: https://secure.tibia.com/community/?subtopic=worlds&world=Xantera
 
-# DEMO
+# DEMO running on Heroku
 
 - https://fast-garden-7039.herokuapp.com/world/xantera
