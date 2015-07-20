@@ -3,6 +3,11 @@ require 'sinatra'
 require 'open-uri'
 require 'nokogiri'
 require 'json'
+require 'sinatra/cross_origin'
+
+configure do
+  enable :cross_origin
+end
 
 set :protection, :except => :json_csrf
 
