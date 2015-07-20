@@ -13,7 +13,7 @@ end
 
 get '/world' do
 	content_type 'application/json', :charset => 'utf-8'
-	'[{:msg=>"Server is not defined}"]'
+	'[{:msg=>"Server is not defined"}]'
 end
 
 get '/world/:server' do
