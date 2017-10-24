@@ -1,5 +1,3 @@
-[![Code Climate](https://img.shields.io/codeclimate/github/kabisaict/flow.svg)]()
-
 # Tibia.com Online Players API - RUBY
 
 - Type: bundle install
